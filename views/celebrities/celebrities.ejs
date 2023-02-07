@@ -1,0 +1,8 @@
+<h2>All celebrities page</h2>
+<% if (!celebsArray.length) { %> There is nothing in the DB <% } %> <% celebsArray.forEach(celebrity => { %>
+<div style="border: 1px solid black; margin: 1rem; padding: 1rem">
+  <h2>Name:<%=celebrity.name%></h2>
+  <h2>Occupation:<%=celebrity.occupation%></h2>
+  <h2>Catch phrase:<%=celebrity.catchPhrase%></h2>
+</div>
+<% }) %>

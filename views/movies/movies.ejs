@@ -1,0 +1,8 @@
+<h2>All movies page</h2>
+<% if (!moviesArray.length) { %> There is nothing in the DB <% } %> <% moviesArray.forEach(movie => { %>
+<div style="border: 1px solid black; margin: 1rem; padding: 1rem">
+  <h2>Title:<%=movie.title%></h2>
+  <h2>Genre:<%=movie.genre%></h2>
+  <h2>Plot:<%=movie.plot%></h2>
+</div>
+<% }) %>
